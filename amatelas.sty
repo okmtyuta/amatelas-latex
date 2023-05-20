@@ -1,63 +1,10 @@
-\newcommand{\margin}[4]{
-  \usepackage[top=#1truemm,bottom=#2truemm,left=#3truemm,right=#4truemm]{geometry}
-}
-\newcommand{\TelasHeadingOne}[1]{
-  \vspace{12pt}
-  \par\noindent
-  {\fontsize{24pt}{24pt}\selectfont #1}
-  \vspace{6pt}
-  {\color[HTML]{e7e7eb}\hrule}
-  \vspace{6pt}
-}
+\usepackage{amatelas-usepackages}
+\usepackage{amatelas-define-color}
+\usepackage{amatelas-ui}
+\usepackage{amatelas-math}
+\usepackage{amatelas-environments}
+\tcbuselibrary{breakable}
 
 \renewcommand{\baselinestretch}{1.7}
-\usepackage{color}
-\usepackage[most]{tcolorbox}
-\definecolor{ThemeColorPrimaryLighten}{HTML}{f2e7e7}
-\definecolor{ThemeColorPrimary}{HTML}{973c3f}
-\definecolor{ThemeColorSecondary}{HTML}{007bbb}
-\definecolor{ThemeColorSecondaryLighten}{HTML}{e0eff6}
-\definecolor{ThemeColorTertiary}{HTML}{aacf53}
-\definecolor{ThemeColorTertiaryLighten}{HTML}{f4f9ea}
-\definecolor{WaringMessageColor}{HTML}{5f2120}
-\definecolor{WarningBackgroundColor}{HTML}{feeded}
 
-\newcommand{\TelasHightlight}[1]{
-\tcbox[
-    on line,
-    boxsep=0pt,
-    left=2pt,
-    right=2pt,
-    top=3pt,
-    bottom=3pt,
-    colframe=ThemeColorPrimaryLighten,
-    colback=ThemeColorPrimaryLighten,  
-    highlight math style={enhanced}
-  ]{\textcolor{ThemeColorPrimary}{#1}}
-}
-
-\newcommand{\danger}[1]{
-  \begin{tcolorbox}[
-    colframe=ThemeColorPrimaryLighten,
-    colback=ThemeColorPrimaryLighten
-  ]
-    {\color{ThemeColorPrimary}#1}
-  \end{tcolorbox}
-}
-\newcommand{\info}[1]{
-  \begin{tcolorbox}[
-    colframe=ThemeColorSecondaryLighten,
-    colback=ThemeColorSecondaryLighten
-  ]
-    {\color{ThemeColorSecondary}#1}
-  \end{tcolorbox}
-}
-\newcommand{\success}[1]{
-  \begin{tcolorbox}[
-    colframe=ThemeColorTertiaryLighten,
-    colback=ThemeColorTertiaryLighten
-  ]
-    {\color{ThemeColorTertiary}#1}
-  \end{tcolorbox}
-}
 
