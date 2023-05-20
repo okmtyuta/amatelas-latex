@@ -4,4 +4,4 @@
 
  Like:
 
-![demo](/amatelas/demo.png)
+![demo](/demo.png)
